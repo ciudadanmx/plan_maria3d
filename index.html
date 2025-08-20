@@ -6,28 +6,42 @@
   <title>Maria3D.org - Plan Estratégico</title>
   <style>
     /* Barra superior */
-    .top-bar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: #009688; /* turquesa oscuro */
-      color: #fff;
-      padding: 0.5rem 1rem;
-      z-index: 1000;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      font-size: 0.9rem;
-    }
-    .top-bar a {
-      color: #e0f7fa; /* turquesa claro */
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .top-bar a:hover {
-      text-decoration: underline;
-    }
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #00796b; /* turquesa oscuro */
+  color: #fff;
+  padding: 0.5rem 1rem;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 0.9rem;
+}
+
+.top-bar a {
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Colores de enlaces armónicos y vibrantes */
+.top-bar a:nth-child(1) {
+  color: #ff6f00; /* naranja cálido */
+}
+.top-bar a:nth-child(2) {
+  color: #cddc39; /* amarillo-limón verdoso */
+}
+.top-bar a:nth-child(3) {
+  color: #00e5ff; /* celeste brillante */
+}
+
+.top-bar a:hover {
+  text-decoration: underline;
+  transform: scale(1.05);
+}
 
     body {
       font-family: 'Arial', sans-serif;
@@ -110,33 +124,10 @@
       h2 {
         font-size: 1.2rem;
       }
-      /* Barra superior */
-.top-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #00796b; /* turquesa oscuro */
-  color: #fff;
-  padding: 0.5rem 1rem;
-  z-index: 1000;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  font-size: 0.9rem;
-}
-.top-bar a {
-  background: linear-gradient(90deg, #80deea, #ffffff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-.top-bar a:hover {
-  text-decoration: underline;
-  transform: scale(1.05);
-}
+      .top-bar {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
     }
   </style>
 </head>
@@ -149,7 +140,7 @@
 </div>
 
 <header>
-  <h1>Maria3D.org</h1>
+  <h1><u><k>Maria3D.org</u></k></h1>
   <p>Primer partido político en México con política de drogas de paz, respeto, conocimiento y justicia salomónica</p>
 </header>
 
